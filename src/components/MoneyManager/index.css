@@ -1,0 +1,287 @@
+body {
+  font-family: 'Roboto';
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.responsive-container {
+  width: 85%;
+  max-width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .responsive-container {
+    width: 78%;
+    max-width: 1020px;
+  }
+}
+
+.app-main-container {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .app-main-container {
+    width: 95%;
+  }
+}
+
+.app-header {
+  border-radius: 12px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  margin-bottom: 30px;
+  background-size: cover;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .app-header {
+    height: 150px;
+  }
+}
+
+.heading {
+  font-size: 22px;
+  color: #1e293b;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 16px;
+  color: #1e293b;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.span-text {
+  font-size: 16px;
+  color: #0b69ff;
+  font-weight: 500;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 32px;
+  }
+  .description,
+  .span-text {
+    font-size: 18px;
+  }
+}
+
+.money-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .money-details-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.details-card {
+  display: flex;
+  border-radius: 12px;
+  padding: 10px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .details-card {
+    width: 30%;
+  }
+}
+.card-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .card-image {
+    width: 65px;
+    height: 65px;
+    width: 30%;
+  }
+}
+.card1 {
+  border: 1px solid #84cc16;
+  background: #ecfccb;
+}
+.card2 {
+  border: 1px solid #06b6d4;
+  background: #cffafe;
+}
+.card3 {
+  border: 1px solid #7c3aed;
+  background: #ede9fe;
+}
+.title-tag {
+  font-size: 12px;
+  color: #7e858e;
+  margin-bottom: 0;
+}
+.money {
+  font-size: 16px;
+  color: #7e858e;
+  margin-top: 5px;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .money {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+
+.transaction-container {
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .transaction-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.transaction-form-container {
+  width: 85%;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .transaction-form-container {
+    width: 48%;
+    margin-top: 35px;
+  }
+}
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+}
+.transaction-form-heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+@media screen and(min-width:768px) {
+  .transaction-form-heading {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+.label {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.input {
+  border: 1px solid #cbd5e1;
+  color: #1e293b;
+  font-size: 12px;
+  background: none;
+  height: 40px;
+  margin-bottom: 18px;
+  outline: none;
+  padding: 8px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .label {
+    font-size: 14px;
+  }
+}
+
+.add-btn {
+  border-radius: 5px;
+  padding: 8px 16px;
+  color: #fff;
+  background: #0b69ff;
+  outline: none;
+  border-width: 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.table-container {
+  width: 85%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+}
+@media screen and (min-width: 768px) {
+  .table-container {
+    width: 48%;
+  }
+}
+
+.transaction-table-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+@media screen and(min-width:768px) {
+  .transaction-table-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+.table-header {
+  border: 1px solid #cbd5e1;
+  display: flex;
+  /* justify-content: space-evenly; */
+  width: 100%;
+  padding-left: 10px;
+}
+.table-title {
+  font-weight: 500;
+  font-size: 14px;
+
+  margin-right: 20px;
+}
+.transaction-menu {
+  padding: 0;
+  margin: 0;
+}
+/*
+ Hex: #475569
+Hex: #0b69ff
+Hex: #ecfccb
+Hex: #84cc16
+Hex: #cffafe
+Hex: #06b6d4
+Hex: #ede9fe
+Hex: #7c3aed
+Hex: #cbd5e1
+Hex: #7e858e
+Hex: #ffffff
+Hex: #1e293b
+Hex: #d7dfe9
+Hex: #334155 */

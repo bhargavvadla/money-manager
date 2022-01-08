@@ -1,0 +1,72 @@
+.transaction-item {
+  border: 1px solid #cbd5e1;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  border-top-width: 0;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style-type: none;
+}
+
+.transaction-text {
+  font-size: 12px;
+  width: 30%;
+  color: #475569;
+}
+
+@media screen and (min-width: 768px) {
+  .transaction-item {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .transaction-text {
+    font-size: 14px;
+  }
+}
+
+.delete-contaienr {
+  width: 10%;
+  display: flex;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border-width: 0;
+}
+.delete-icon {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .delete-icon {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .delete-icon {
+    margin-right: 25px;
+  }
+}
+
+/* Hex: #475569
+Hex: #0b69ff
+Hex: #ecfccb
+Hex: #84cc16
+Hex: #cffafe
+Hex: #06b6d4
+Hex: #ede9fe
+Hex: #7c3aed
+Hex: #cbd5e1
+Hex: #7e858e
+Hex: #ffffff
+Hex: #1e293b
+Hex: #d7dfe9
+Hex: #334155 */
